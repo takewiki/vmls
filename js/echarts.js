@@ -26,7 +26,7 @@ $(function () {
                     },
                     magicType: {
                         show: true,
-                        type: ['line', 'bar']
+                        type: [ 'bar']
                     },
                     restore: {
                         show: false
@@ -45,7 +45,7 @@ $(function () {
                 containLabel: true
             },
             legend: {
-                data: ['订单量', '累计', '累计2'],
+                data: ['订单量', ],
                 textStyle: {
                     color: "#fff"
                 }
@@ -71,7 +71,7 @@ $(function () {
                 type: 'value',
                 name: '订单量',
                 axisLabel: {
-                    formatter: '{value} KPa',
+                    formatter: '{value} PCS',
                     textStyle: {
                         color: "#2EC7C9" //X轴文字颜色
                     }
@@ -86,7 +86,7 @@ $(function () {
                     type: 'value',
                     name: '占比',
                     axisLabel: {
-                        formatter: '{value} °C',
+                        formatter: '{value} %',
                         textStyle: {
                             color: "#2EC7C9" //X轴文字颜色
                         }
