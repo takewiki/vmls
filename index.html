@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>域华电子</title>
+    <!--青岛研锦网络科技有限公司   版权所有-->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            $('.myscroll').myScroll({
+                speed: 60, //数值越大，速度越慢
+                rowHeight: 38 //li的高度
+            });
+        });
+
+        $(document).ready(function () {
+            var whei = $(window).width()
+            $("html").css({ fontSize: whei / 22 });
+            $(window).resize(function () {
+                var whei = $(window).width();
+                $("html").css({ fontSize: whei / 22 })
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="main">
+    <div class="header">
+        <div class="header-left fl" id="time"></div>
+        <div class="header-center fl">
+            <div class="header-title">
+                域华电子生产看板
+            </div>
+            <div class="header-img"></div>
+        </div>
+        <div class="header-right fl"></div>
+        <div class="header-bottom fl"></div>
+
+    </div>
+
+    <div class="center">
+        <div class="center-left fl">
+            <div class="left-top">
+                <!--<h1 id="ceshi">数据可视化</h1>-->
+                <div class="title">管理指标</div>
+                <div class="top-list">
+                    <!--<p>当你征服一座山峰时，它已经在你脚下了，你必须再找一座山峰去征服，否则，你只有下山，走下坡路了</p>-->
+                    <ul>
+                        <li>排产率：100%</li>
+                        <li>达产率：98%</li>
+                        <li>完工率：99%</li>
+                        <li>一次良品率：95%</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="left-cen">
+                <div class="title">销售订单信息</div>
+                <ul class="company">
+                    <li></li>
+                    <li>客户数：5个</li>
+                    <li>订单数：14个</li>
+                    <li>产品数：14个</li>
+                    <li>订单数量：846PCS</li>
+                </ul>
+
+            </div>
+            <div class="left-bottom">
+                <div class="title">客户订单分析</div>
+                <div class="bottom-b">
+                    <div id="chart3" class="allnav"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="center-cen fl">
+            <div class="cen-top">
+                <div class="top-title">
+                    <ul>
+                        <li>
+                            <p>数量统计</p>
+                            <span>3</span>
+                            <span>6</span>
+                            <span>5</span>
+                            <b>个</b>
+                        </li>
+                        <li>
+                            <p>同比上升</p>
+                            <span>1</span>
+                            <span>3</span>
+                            <b>%</b>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="top-bottom">
+                    <div id="chart1" class="allnav"></div>
+                </div>
+
+
+            </div>
+            <div class="cen-bottom">
+                <div class="title">销售订单明细</div>
+                <div class="bottom-b">
+                    <div class="gun">
+                        <span>序号</span>
+                        <span>销售订单号</span>
+                        <span>订单数量</span>
+                    </div>
+
+                    <div id="FontScroll" class="myscroll">
+                        <ul>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>1</b>
+                                    </span>
+                                    <span>SO2302-001</span>
+                                    <span>93</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>2</b>
+                                    </span>
+                                    <span>SO2302-002</span>
+                                    <span>120</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>3</b>
+                                    </span>
+                                    <span>SO2302-003</span>
+                                    <span>150</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>4</b>
+                                    </span>
+                                    <span>SO2302-004</span>
+                                    <span>75</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>5</b>
+                                    </span>
+                                    <span>SO2302-005</span>
+                                    <span>168</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>6</b>
+                                    </span>
+                                    <span>SO2302-006</span>
+                                    <span>145</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>7</b>
+                                    </span>
+                                    <span>SO2302-007</span>
+                                    <span>93</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>8</b>
+                                    </span>
+                                    <span>SO2302-008</span>
+                                    <span>98</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>9</b>
+                                    </span>
+                                    <span>SO2302-009</span>
+                                    <span>155</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="center-right fr">
+            <div class="right-top">
+                <div class="title">二楼</div>
+
+                <div class="echart wenzi">
+                    <div class="gun">
+                        <span>生产工单号</span>
+                        <span>合格数量</span>
+                        <span>不良返修数量</span>
+                    </div>
+                    <div id="FontScroll" class="myscroll">
+                        <ul>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-008</span>
+                                    <span>49</span>
+                                    <span>2</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-009</span>
+                                    <span>30</span>
+                                    <span>1</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-010</span>
+                                    <span>92</span>
+                                    <span>3</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-011</span>
+                                    <span>93</span>
+                                    <span>3</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-cen">
+                <div class="title">九楼</div>
+                <div id="chart2" class="allnav" style="display:none">
+
+
+
+                </div>
+                <div class="echart wenzi">
+                    <div class="gun">
+                        <span>生产工单号</span>
+                        <span>合格数量</span>
+                        <span>不良返修数量</span>
+                    </div>
+                    <div id="FontScroll" class="myscroll">
+                        <ul>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-012</span>
+                                    <span>49</span>
+                                    <span>2</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-013</span>
+                                    <span>58</span>
+                                    <span>1</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-014</span>
+                                    <span>63</span>
+                                    <span>3</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-015</span>
+                                    <span>69</span>
+                                    <span>3</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-016</span>
+                                    <span>71</span>
+                                    <span>3</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-bottom" >
+                <div class="title">十楼</div>
+                <div class="chat" style="display:none">
+                    <div id="chart5" class="allnav"></div>
+                </div>
+
+                <div class="echart wenzi">
+                    <div class="gun">
+                        <span>生产工单号</span>
+                        <span>合格数量</span>
+                        <span>不良返修数量</span>
+                    </div>
+                    <div id="FontScroll" class="myscroll">
+                        <ul>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-017</span>
+                                    <span>49</span>
+                                    <span>2</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-018</span>
+                                    <span>30</span>
+                                    <span>1</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-019</span>
+                                    <span>92</span>
+                                    <span>3</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-020</span>
+                                    <span>84</span>
+                                    <span>3</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>MO2302-021</span>
+                                    <span>73</span>
+                                    <span>3</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/wodry.min.js"></script>
+<script src="js/fontscroll.js"></script>
+<script src="js/echarts.js"></script>
+<!--青岛研锦网络科技有限公司   版权所有-->
+<script>
+    /*$('#ceshi').wodry({
+
+        animation: 'rotateX',
+
+        delay: 1000,
+
+        animationDuration: 800
+
+    });*/
+    /*window.onload = function () {
+        setInterval(function () {
+            var hs=document.getElementById("ceshi");
+            var hstyle=hs.style.transform;
+            if(hstyle=='rotateX(-360deg)'){
+                //console.log(1)
+                hs.style.transform='rotateX(0deg)';
+                hs.style.transform='transform 500ms cubic-bezier(0.55, 0.18, 0.92, 0.46) 0s;'
+            }else {
+                hs.style.transform='rotateX(-360deg)';
+                hs.style.transition="all 2s";
+            }
+        }, 5000);
+    };*/
+
+    //顶部时间
+    function getTime(){
+        var myDate = new Date();
+        var myYear = myDate.getFullYear(); //获取完整的年份(4位,1970-????)
+        var myMonth = myDate.getMonth()+1; //获取当前月份(0-11,0代表1月)
+        var myToday = myDate.getDate(); //获取当前日(1-31)
+        var myDay = myDate.getDay(); //获取当前星期X(0-6,0代表星期天)
+        var myHour = myDate.getHours(); //获取当前小时数(0-23)
+        var myMinute = myDate.getMinutes(); //获取当前分钟数(0-59)
+        var mySecond = myDate.getSeconds(); //获取当前秒数(0-59)
+        var week = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+        var nowTime;
+
+        nowTime = myYear+'-'+fillZero(myMonth)+'-'+fillZero(myToday)+'&nbsp;&nbsp;'+fillZero(myHour)+':'+fillZero(myMinute)+':'+fillZero(mySecond)+'&nbsp;&nbsp;'+week[myDay]+'&nbsp;&nbsp;';
+        //console.log(nowTime);
+        $('#time').html(nowTime);
+    };
+    function fillZero(str){
+        var realNum;
+        if(str<10){
+            realNum	= '0'+str;
+        }else{
+            realNum	= str;
+        }
+        return realNum;
+    }
+    setInterval(getTime,1000);
+
+</script>
+
+</body>
+</html>
