@@ -15,13 +15,13 @@ $(function () {
                 trigger: 'axis'
             },
             toolbox: {
-                show: true,
+                show: false,
                 feature: {
                     mark: {
-                        show: true
+                        show: false
                     },
                     dataView: {
-                        show: true,
+                        show: false,
                         readOnly: false
                     },
                     magicType: {
@@ -29,10 +29,10 @@ $(function () {
                         type: ['line', 'bar']
                     },
                     restore: {
-                        show: true
+                        show: false
                     },
                     saveAsImage: {
-                        show: true
+                        show: false
                     }
                 }
             },
