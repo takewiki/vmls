@@ -97,7 +97,7 @@ ul,ol{
     padding: .1rem .2rem .1rem .2rem;
 }
 .center .center-left{
-    width: 30%;
+    width: 15%;
     padding: .1rem;
 /*    border: 1px solid red;*/
 
@@ -141,7 +141,7 @@ ul,ol{
 
 .title{
     width: 90%;
-    height: 0.3rem;
+    height: .3rem;
 /*    border: 1px solid gold;*/
     position: relative;
     top:.1rem;
@@ -162,24 +162,24 @@ ul,ol{
     left: 0;
 }
 .top-list p{
-    font-size: .18rem;
+    font-size: .2rem;
     color: #029698;
-    padding: .3rem;
+    padding: .2rem;
 }
 .top-list li{
     float: left;
     font-size: .2rem;
     color: #ffffff;
-    width: 50%;
+    width: 100%;
     height: .4rem;
-    line-height: .4rem;
+    line-height: .2rem;
     padding: .2rem;
 }
 
 
 .center .center-left .left-cen{
     width: 100%;
-    height: 2.2rem;
+    height: 2rem;
     margin-bottom: .4rem;
     /*background: url("../images/panel.png") no-repeat;
     background-size: 100% 100%;*/
@@ -196,14 +196,14 @@ ul,ol{
 }
 .center .center-left .left-cen .company li{
     color: white;
-    height: .3rem;
+    height: .25rem;
     line-height: .3rem;
 }
 
 
 .center .center-left .left-bottom{
     width: 100%;
-    height: 5.2rem;
+    height: 3.5rem;
     /*background: url("../images/panel.png") no-repeat;
     background-size: 100% 100%;*/
     border: 0.01rem solid #217093;
@@ -215,12 +215,12 @@ ul,ol{
     margin-top: 0.1rem;
 }
 .center .center-cen{
-    width: 40%;
+    width: 4%;
     padding: .1rem;
 }
 .center .center-cen .cen-top{
     width: 100%;
-    height: 6.8rem;
+    height: 1rem;
     /*background: url("../images/a.png") no-repeat;
     background-size: 100% 100%;*/
     border: 0.01rem solid #217093;
@@ -255,7 +255,7 @@ ul,ol{
     text-align: center;
     display: inline-block;
     width: .35rem;
-    height: .45rem;
+    height: .1rem;
     background: #37a9ea;
     margin-left: .1rem;
     line-height: .4rem;
@@ -264,9 +264,9 @@ ul,ol{
 }
 .center .center-cen .cen-top .top-bottom{
     width: 100%;
-    height: 4.8rem;
+    height: 2rem;
     /*border: 1px solid red;*/
-    position: absolute;
+ position: absolute;
     top:1.6rem;
     padding: .2rem;
     /*overflow: hidden;*/
@@ -274,16 +274,17 @@ ul,ol{
 
 
 .center .center-cen .cen-bottom{
-    width: 100%;
-    height: 3.2rem;
+    width: 18rem;
+    height: 8.5rem;
 
     border: 0.01rem solid #217093;
 }
 .center .center-cen .bottom-b{
     width: calc(100% - 0.2rem);
-    height: 2.6rem;
+    height: 1.5rem;
     margin-left: 0.1rem;
     margin-top: 0.1rem;
+	margin-bottom: 0.5rem;
 }
 
 .center .center-right{
@@ -321,29 +322,28 @@ ul,ol{
 
 .gun{
     /* width: 100%;*/
-    margin-top: .2rem;
+    margin-top: .1rem;
 }
 .gun span{
     display: block;
     float: left;
-    height: .2rem;
-    width: 33%;
+    height: .9rem;
+    width: 9%;
     /*background: red;*/
     /*margin: 15px 10px 10px 10px;*/
     /*padding: 20px;*/
     text-align: center;
-    font-size: 0.14rem;
+    font-size: 0.35rem;
     font-weight: 600;
     color: #61d2f7;
     text-align: center;
-    margin-bottom: .1rem;
 }
 #FontScroll{
     width: 100%;
-    height: 2.3rem;
-    overflow: hidden;
-    /*float: left;*/
-    margin-top: .1rem;
+    height: 7.5rem;
+   overflow: hidden; 
+  /* float: left; */
+    margin-top: 0.1rem;
     /*margin: 0 5%;*/
     /*margin-left: 50px;*/
 
@@ -351,15 +351,15 @@ ul,ol{
 
 }
 #FontScroll ul li{
-    height: .32rem;
+    height: .7rem;
     width: 100%;
     color: #ffffff;
     text-align: center;
-    line-height: .32rem;
-    /*border-bottom: 1px dashed #404040;*/
+    line-height: .10rem;
+   /* border-bottom: 1px dashed #404040; */
     /*width:33.3%;*/
     overflow: hidden;
-    font-size: 0.14rem;
+    font-size: 0.3rem;
     /*border-bottom: 1px dashed #404040;*/
     /*width:33.3%;*/
 
@@ -382,21 +382,25 @@ ul,ol{
 
 .fontInner span{
     display:inline-block;
-    /*float: left;*/
+   float: left;
+   font-size: 0.25rem;
     /*height: 20px;*/
-    width:31%;
+    width:9%;
     color: #ffffff;
+	line-height: .3rem;
 
     /*background: red;*/
 
 }
 .fontInner span b{
     display: inline-block;
-    width: .2rem;
-    height: .2rem;
-    border-radius: 0.03rem;
+    width: .45rem;
+    height: .35rem;
+	font-size: 0.3rem;
+    border-radius: 0.01rem;
     color: #ffffff;
-    line-height: .2rem;
+    line-height: .3rem;
+	/* background-color: #aaaaff; */
 }
 /*#FontScroll ul li:nth-child(1) .fontInner span b{
     background: #EB6841
@@ -411,5 +415,5 @@ ul,ol{
 #FontScroll ul li:nth-child(8n-6) .fontInner span b{ background: #EDC951 }
 #FontScroll ul li:nth-child(8n-7) .fontInner span b{ background: #C8C8A9 }
 #FontScroll ul li:nth-child(8n) .fontInner span b{ background: #83AF9B }
-#FontScroll ul li:first-child .fontInner span b{ background: #036564 }
-#FontScroll ul li:last-child .fontInner span b{ background: #3299BB }
+/* #FontScroll ul li:first-child .fontInner span b{ background: #036564 }
+#FontScroll ul li:last-child .fontInner span b{ background: #3299BB } */
