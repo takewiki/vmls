@@ -64,7 +64,7 @@ $(function () {
                 type: 'category',
                 data: ['Loc3-5W', 'Loc3-10W', 'Loc3-Pro Rx', 'Loc3-DM Rx', 'Loc3-ML Rx','Loc3-9800 Rx','Loc3-CAM Rx'],
                 axisLabel: {
-                    show: true,
+                    show: false,
                     textStyle: {
                         color: "#ebf8ac" //X轴文字颜色
                         // width:%
@@ -236,7 +236,7 @@ $(function () {
             ],
             dataZoom:
                 {
-                    show:true,
+                    show:false,
                     realtime:true,
                     type:'slider',
                     height:20,
