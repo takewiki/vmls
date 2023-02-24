@@ -8,34 +8,43 @@ $(function () {
 
     function ceshis() {
         var myChart = echarts.init(document.getElementById('chart1'));
-
+        // var _deptnumber=[];
+        // var showEchart=false;
+        // var namenum=0;
+        // if(_deptnumber.length > 0){
+        //     namenum=Math.floor(100/(_deptnumber.length/3));
+        //     if(_deptnumber.length>3){
+        //         showEchart=true;
+        //     } else{
+        //         showEchart=false;
+        //     }
+        // }
         option = {
-            /*backgroundColor: '#05163B',*/
             tooltip: {
                 trigger: 'axis'
             },
-            toolbox: {
-                show: false,
-                feature: {
-                    mark: {
-                        show: false
-                    },
-                    dataView: {
-                        show: false,
-                        readOnly: false
-                    },
-                    magicType: {
-                        show: true,
-                        type: [ 'bar']
-                    },
-                    restore: {
-                        show: false
-                    },
-                    saveAsImage: {
-                        show: false
-                    }
-                }
-            },
+            // toolbox: {
+            //     show: true,
+            //     feature: {
+            //         mark: {
+            //             show: true
+            //         },
+            //         dataView: {
+            //             show: true,
+            //             readOnly: false
+            //         },
+            //         magicType: {
+            //             show: true,
+            //             type: ['line', 'bar']
+            //         },
+            //         restore: {
+            //             show: true
+            //         },
+            //         saveAsImage: {
+            //             show: true
+            //         }
+            //     }
+            // },
             grid: {
                 top: 'middle',
                 left: '3%',
@@ -45,7 +54,7 @@ $(function () {
                 containLabel: true
             },
             legend: {
-                data: ['订单量', ],
+                data: ['订单量', '累计', '累计2'],
                 textStyle: {
                     color: "#fff"
                 }
@@ -53,12 +62,12 @@ $(function () {
             },
             xAxis: [{
                 type: 'category',
-                data: ['1.200.02.00001', '1.200.02.00002', '1.200.02.00005', '1.200.02.00003', '1.200.02.00004', 
-                ],
+                data: ['Loc3-5W', 'Loc3-10W', 'Loc3-Pro Rx', 'Loc3-DM Rx', 'Loc3-ML Rx','Loc3-9800 Rx','Loc3-CAM Rx'],
                 axisLabel: {
                     show: true,
                     textStyle: {
                         color: "#ebf8ac" //X轴文字颜色
+                        // width:%
                     }
                 },
                 axisLine: {
@@ -69,9 +78,9 @@ $(function () {
             }],
             yAxis: [{
                 type: 'value',
-                name: '订单量',
+                name: '数量',
                 axisLabel: {
-                    formatter: '{value} PCS',
+                    formatter: '{value} 个',
                     textStyle: {
                         color: "#2EC7C9" //X轴文字颜色
                     }
@@ -97,10 +106,11 @@ $(function () {
                     },
                 }
             ],
+            
             series: [
 
                 {
-                    name: '压力',
+                    name: '订单数',
                     type: 'bar',
                     itemStyle: {
                         normal: {
@@ -117,10 +127,10 @@ $(function () {
                         }
                     },
                     /*data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]*/
-                    data: [26.4, 28.7, 70.7, 75.6, 82.2,  ],
+                    data: [26.4, 28.7, 70.7, 75.6, 82.2, 76.7, 135.6, 162.2, 32.6 ],
                 },
                 {
-                    name: '温度',
+                    name: '占比',
                     type: 'bar',
                     itemStyle: {
                         normal: {
@@ -136,13 +146,13 @@ $(function () {
                             ])
                         }
                     },
-                    data: [26.4, 28.7, 70.7, 75.6, 82.2, 48.7, 58.8, 16.0, 32.3, 30.3, 21.3, 66.3, 41.3, 15.3, 30.3, 22.3, 12.3, 82.3, 72.3, 62.3, 52.3, 42.3, 36.6],
+                    data: [26.4, 28.7, 70.7, 75.6, 82.2,76.7, 135.6, 162.2, 32.6],
                 },
                 {
                     name: '累计',
                     type: 'line',
                     yAxisIndex: 1,
-                    data: [26.4, 28.7, 70.7, 75.6, 82.2, 48.7, 58.8, 16.0, 32.3, 30.3, 21.3, 66.3, 41.3, 15.3, 30.3, 22.3, 12.3, 82.3, 72.3, 62.3, 52.3, 42.3, 36.6],
+                    data: [26.4, 28.7, 70.7, 75.6, 82.2,76.7, 135.6, 162.2, 32.6],
                     lineStyle: {
                         normal: {
                             width: 5,
@@ -179,48 +189,62 @@ $(function () {
                     },
                     smooth: true,
                 },
-                {
-                    name: '累计2',
-                    type: 'line',
-                    yAxisIndex: 1,
-                    data: [26.4, 28.7, 70.7, 75.6, 82.2, 48.7, 58.8, 16.0, 32.3, 30.3, 21.3, 66.3, 41.3, 15.3, 30.3, 22.3, 12.3, 82.3, 72.3, 62.3, 52.3, 42.3, 36.6],
-                    lineStyle: {
-                        normal: {
-                            width: 5,
-                            color: {
-                                type: 'linear',
+               
 
-                                colorStops: [{
-                                    offset: 0,
-                                    color: '#F8B854' // 0% 处的颜色
-                                },
-                                    {
-                                        offset: 0.4,
-                                        color: '#DE801C' // 100% 处的颜色
-                                    }, {
-                                        offset: 1,
-                                        color: '#DE801C' // 100% 处的颜色
-                                    }
-                                ],
-                                globalCoord: false // 缺省为 false
-                            },
-                            shadowColor: 'rgba(71,216,190, 0.5)',
-                            shadowBlur: 10,
-                            shadowOffsetY: 7
-                        }
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: '#F7AD3E',
-                            borderWidth: 10,
-                            /*shadowColor: 'rgba(72,216,191, 0.3)',
-                             shadowBlur: 100,*/
-                            borderColor: "#F7AD3E"
-                        }
-                    },
-                    smooth: true,
+                
+                // {
+                //     name: '累计2',
+                //     type: 'line',
+                //     yAxisIndex: 1,
+                //     data: [26.4, 28.7, 70.7, 75.6, 82.2, 48.7, 58.8, 16.0, 32.3, 30.3, 21.3, 66.3, 41.3, 15.3, 30.3, 22.3, 12.3, 82.3, 72.3, 62.3, 52.3, 42.3, 36.6],
+                //     lineStyle: {
+                //         normal: {
+                //             width: 5,
+                //             color: {
+                //                 type: 'linear',
+
+                //                 colorStops: [{
+                //                     offset: 0,
+                //                     color: '#F8B854' // 0% 处的颜色
+                //                 },
+                //                     {
+                //                         offset: 0.4,
+                //                         color: '#DE801C' // 100% 处的颜色
+                //                     }, {
+                //                         offset: 1,
+                //                         color: '#DE801C' // 100% 处的颜色
+                //                     }
+                //                 ],
+                //                 globalCoord: false // 缺省为 false
+                //             },
+                //             shadowColor: 'rgba(71,216,190, 0.5)',
+                //             shadowBlur: 10,
+                //             shadowOffsetY: 7
+                //         }
+                //     },
+                //     itemStyle: {
+                //         normal: {
+                //             color: '#F7AD3E',
+                //             borderWidth: 10,
+                //             /*shadowColor: 'rgba(72,216,191, 0.3)',
+                //              shadowBlur: 100,*/
+                //             borderColor: "#F7AD3E"
+                //         }
+                //     },
+                //     smooth: true,
+                // }
+            ],
+            dataZoom:
+                {
+                    show:true,
+                    realtime:true,
+                    type:'slider',
+                    height:20,
+                    start:20,
+                    end:80
+                    
                 }
-            ]
+               
         };
 
         // 使用刚指定的配置项和数据显示图表。
@@ -417,7 +441,7 @@ $(function () {
                 }
             },
             "legend": {
-                "width": "100%",
+                "width": "40%",
                 "left": "center",
                 "textStyle": {
                     "color": "#fff",
@@ -428,7 +452,7 @@ $(function () {
                 "bottom": "0",
                 "padding": [70, 20],
                 "itemGap": 5,
-                "data": ["A", "B", "C", "D", ]
+                "data": ["Loc3-Pro Rx", "vCam-5", "Spare PartsC", "vScan Tx","Loc3-10W" ]
             },
             "series": [{
                 "type": "pie",
@@ -519,16 +543,16 @@ $(function () {
                     }
                 },
                 "data": [{
-                    "name": "A",
+                    "name": "Loc3-Pro Rx",
                     "value": 3
                 }, {
-                    "name": "B",
+                    "name": "vCam-5",
                     "value": 2
                 }, {
-                    "name": "C",
+                    "name": "Spare Parts",
                     "value": 26
                 }, {
-                    "name": "D",
+                    "name": "vScan Tx",
                     "value": 24
                 }]
             }, {

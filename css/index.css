@@ -1,17 +1,18 @@
-/*青 岛 研 锦 网 络 科 技 有 限 公 司   版权所有*/
 *{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box}
 *,body{padding:0px;	margin:0px;color: #222;font-family: "微软雅黑";}
 html,body{
-    background: url("../images/bg01.png") no-repeat;
+    background: url("../images/bg02.png") no-repeat;
     background-size: cover;
     font-size: .16rem;
     color: #ffffff;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100%;   
+    margin:0px;
+    padding: 0px;
 }
 .fl{
     float: left;
@@ -52,6 +53,20 @@ ul,ol{
     text-align: center;
     line-height: 1.05rem;
 }
+.input-container{
+    width: 15%;
+    height: .5rem;
+    color: rgb(231, 227, 227);
+    background-color: #4b86ad;
+    font-size: .3rem;
+    text-align: center;
+    line-height: 1.05rem;
+    position: absolute;
+    left: 90px;
+    top: 30px;
+    border: .01rem solid #217093;
+}
+
 .header .header-center{
     width: 50%;
     height: 1.05rem;
@@ -77,10 +92,56 @@ ul,ol{
 }
 
 .header .header-right{
-    width: 25%;
-    height: 1.05rem;
+    width: 50%;
+    height: 0.5rem;
     /*border: 1px solid gold;*/
 }
+#sid{
+    width: 150px;
+    height: 45px;
+    font-size: .3rem;
+    background-color: #4b86ad;
+    color: rgb(231, 227, 227);
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    text-align: center;
+}
+
+#flow{
+    width: 150px;
+    height: 45px;
+    font-size: .3rem;
+    background-color: #4b86ad;
+    color: rgb(231, 227, 227);
+    position: absolute;
+    top: 30px;
+    right: 250px;
+    text-align: center;
+}
+
+
+.co_mfg{
+    /* width: 100%;*/
+    margin-top: .1rem;
+}
+.co_mfg span{
+    display: block;
+    float: left;
+    height: .3rem;
+    width: 7.6%;
+    /*background: red;*/
+    /*margin: 15px 10px 10px 10px;*/
+    /*padding: 20px;*/
+    text-align: center;
+    font-size: 0.2rem;
+    font-weight: 600;
+    color: #61d2f7;
+    text-align: center;
+}
+
+
+
 .header .header-bottom{
     width: calc(100% - .4rem);
     height: .16rem;
@@ -94,18 +155,16 @@ ul,ol{
 /*
 内容*/
 .center{
-    padding: .1rem .2rem .1rem .2rem;
+    padding: .1rem ;
 }
 .center .center-left{
-    width: 15%;
+    width: 25%;
     padding: .1rem;
-/*    border: 1px solid red;*/
-
 }
 .center .center-left .left-top{
     width: 100%;
-    height: 2.2rem;
-    margin-bottom: .4rem;
+    height: 2rem;
+    margin-bottom: .1rem;
     /*background: url("../images/panel.png") no-repeat;
     background-size: 100% 100%;*/
     /*transform-style: preserve-3d;*/
@@ -113,7 +172,6 @@ ul,ol{
     position: relative;
     overflow: hidden;
 }
-
 .center .center-left .left-top h1{
     color: white;
     font-size: .4rem;
@@ -134,14 +192,9 @@ ul,ol{
     /*过渡效果*/
     transition: all 1s;
 }
-/*.center .center-left .left-top h1:hover{
-    transform: rotateX(360deg);
-    transition: all 2s;
-}*/
-
 .title{
     width: 90%;
-    height: .3rem;
+    height: 0.3rem;
 /*    border: 1px solid gold;*/
     position: relative;
     top:.1rem;
@@ -162,24 +215,23 @@ ul,ol{
     left: 0;
 }
 .top-list p{
-    font-size: .2rem;
+    font-size: .18rem;
     color: #029698;
-    padding: .2rem;
+    padding: .3rem;
 }
 .top-list li{
     float: left;
     font-size: .2rem;
     color: #ffffff;
-    width: 100%;
+    width: 50%;
     height: .4rem;
-    line-height: .2rem;
-    padding: .2rem;
+    line-height: .4rem;
+    padding: .4rem;
 }
-
 
 .center .center-left .left-cen{
     width: 100%;
-    height: 2rem;
+    height: 30 rem;
     margin-bottom: .4rem;
     /*background: url("../images/panel.png") no-repeat;
     background-size: 100% 100%;*/
@@ -196,31 +248,30 @@ ul,ol{
 }
 .center .center-left .left-cen .company li{
     color: white;
-    height: .25rem;
+    height: .3rem;
     line-height: .3rem;
 }
 
-
 .center .center-left .left-bottom{
-    width: 100%;
-    height: 3.5rem;
+    width: 267%;
+    height: 3.8rem;
     /*background: url("../images/panel.png") no-repeat;
     background-size: 100% 100%;*/
     border: 0.01rem solid #217093;
 }
 .center .center-left .bottom-b{
     width: calc(100% - 0.2rem);
-    height: 5.1rem;
+    height: 3.7rem;
     margin-left: 0.1rem;
     margin-top: 0.1rem;
 }
 .center .center-cen{
-    width: 4%;
+    width: 50%;
     padding: .1rem;
 }
 .center .center-cen .cen-top{
-    width: 100%;
-    height: 1rem;
+    width: 80%;
+    height: 6.2rem;
     /*background: url("../images/a.png") no-repeat;
     background-size: 100% 100%;*/
     border: 0.01rem solid #217093;
@@ -231,9 +282,8 @@ ul,ol{
 
 .center .center-cen .cen-top .top-title{
     position: absolute;
-    width: 35%;
+    width: 60%;
     height: 1.5rem;
-    /*border: 1px solid red;*/
     left: .5rem;
     top:.5rem;
 }
@@ -255,7 +305,7 @@ ul,ol{
     text-align: center;
     display: inline-block;
     width: .35rem;
-    height: .1rem;
+    height: .45rem;
     background: #37a9ea;
     margin-left: .1rem;
     line-height: .4rem;
@@ -264,49 +314,47 @@ ul,ol{
 }
 .center .center-cen .cen-top .top-bottom{
     width: 100%;
-    height: 2rem;
+    height: 4.8rem;
     /*border: 1px solid red;*/
- position: absolute;
+    position: absolute;
     top:1.6rem;
     padding: .2rem;
     /*overflow: hidden;*/
 }
-
-
 .center .center-cen .cen-bottom{
-    width: 18rem;
-    height: 8.5rem;
-
+    width: 80%;
+    height: 3.2rem;
     border: 0.01rem solid #217093;
 }
 .center .center-cen .bottom-b{
     width: calc(100% - 0.2rem);
-    height: 1.5rem;
+    height: 3.6rem;
     margin-left: 0.1rem;
-    margin-top: 0.1rem;
-	margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
 }
 
 .center .center-right{
-    width: 30%;
+    width: 25%;
     padding: .1rem;
+    position: absolute;
+    left: 1250px;
 }
 
 .center .center-right .right-top{
-    width: 100%;
+    width: 142%;
     height: 3.2rem;
-    margin-bottom: .4rem;
+    /* margin-bottom: .4rem; */
     border: 0.01rem solid #217093;
 }
 .center .center-right .right-cen{
-    width: 100%;
+    width: 142%;
     height: 3.2rem;
-    margin-bottom: .4rem;
+    /* margin-bottom: .4rem; */
     border: 0.01rem solid #217093;
 }
 .center .center-right .right-bottom{
-    width: 100%;
-    height: 3.2rem;
+    width: 142%;
+    height: 4rem;
     border: 0.01rem solid #217093;
 }
 .chat{
@@ -317,62 +365,71 @@ ul,ol{
     padding: .1rem;
     /*overflow: hidden;*/
 }
-
-
-
-.gun{
+.gun1{
     /* width: 100%;*/
-    margin-top: .1rem;
+    margin-top: .2rem;
 }
-.gun span{
+.gun1 span{
     display: block;
     float: left;
-    height: .9rem;
-    width: 9%;
-    /*background: red;*/
-    /*margin: 15px 10px 10px 10px;*/
-    /*padding: 20px;*/
+    height: .2rem;
+    width: 12.5%;
     text-align: center;
-    font-size: 0.35rem;
+    font-size: 0.15rem;
     font-weight: 600;
     color: #61d2f7;
     text-align: center;
+    margin-bottom: .1rem;
+    /* margin-left: .1rem; */
+}
+.gun2{
+    /* width: 100%;*/
+    margin-top: .2rem;
+}
+.gun2 span{
+    display: block;
+    float: left;
+    height: .2rem;
+    width: 16.5%;
+    text-align: center;
+    font-size: 5px;
+    font-weight: 200;
+    color: #61d2f7;
+    text-align: center;
+    margin-bottom: .1rem;
+    padding-left: 0rem;
+}
+#pick{
+    width: 120px;
+    height: 50px;
+    /* font-size: .3rem; */
+    position: absolute;
+    right:100px;
+    top: 30px;
+
 }
 #FontScroll{
     width: 100%;
-    height: 7.5rem;
-   overflow: hidden; 
-  /* float: left; */
-    margin-top: 0.1rem;
-    /*margin: 0 5%;*/
-    /*margin-left: 50px;*/
-
-    /*background: gold;*/
-
+    height: 2.3rem;
+    overflow: hidden;
+    margin-top: .1rem;
+    margin-left:.1rem;
+    overflow: hidden;
 }
 #FontScroll ul li{
-    height: .7rem;
+    height: .32rem;
     width: 100%;
     color: #ffffff;
     text-align: center;
-    line-height: .10rem;
-   /* border-bottom: 1px dashed #404040; */
-    /*width:33.3%;*/
+    line-height: .32rem;
     overflow: hidden;
-    font-size: 0.3rem;
-    /*border-bottom: 1px dashed #404040;*/
-    /*width:33.3%;*/
-
-
-    /*background: red;
-    margin: 0 2%;*/
-
+    font-size: 0.14rem;
+    padding-left: .1rem;
 }
 #FontScroll ul li:nth-child(1){
     /*background-color: #072951;*/
     box-shadow: -10px 0px 15px #034c6a inset, /*左边阴影*/
     10px 0px 15px #034c6a inset;
-
 }
 #FontScroll ul li:hover{
     box-shadow: -10px 0px 15px #034c6a inset, /*左边阴影*/
@@ -382,31 +439,32 @@ ul,ol{
 
 .fontInner span{
     display:inline-block;
-   float: left;
-   font-size: 0.25rem;
+    /*float: left;*/
     /*height: 20px;*/
-    width:9%;
+    width:12.2%;
     color: #ffffff;
-	line-height: .3rem;
+
+    /*background: red;*/
+
+}
+.fontInner1 span{
+    display:inline-block;
+    /*float: left;*/
+    /*height: 20px;*/
+    width: 16.2%;
+    color: #ffffff;
 
     /*background: red;*/
 
 }
 .fontInner span b{
     display: inline-block;
-    width: .45rem;
-    height: .35rem;
-	font-size: 0.3rem;
-    border-radius: 0.01rem;
+    width: .2rem;
+    height: .2rem;
+    border-radius: 0.03rem;
     color: #ffffff;
-    line-height: .3rem;
-	/* background-color: #aaaaff; */
+    line-height: .2rem;
 }
-/*#FontScroll ul li:nth-child(1) .fontInner span b{
-    background: #EB6841
-
-}*/
-/*青 岛 研 锦 网 络 科 技 有 限 公 司   版权所有*/
 #FontScroll ul li:nth-child(8n-4) .fontInner span b{ background: #20a8fe }
 #FontScroll ul li:nth-child(8n-3) .fontInner span b{ background: #EB6841 }
 #FontScroll ul li:nth-child(8n-2) .fontInner span b{ background: #3FB8AF }
@@ -415,5 +473,5 @@ ul,ol{
 #FontScroll ul li:nth-child(8n-6) .fontInner span b{ background: #EDC951 }
 #FontScroll ul li:nth-child(8n-7) .fontInner span b{ background: #C8C8A9 }
 #FontScroll ul li:nth-child(8n) .fontInner span b{ background: #83AF9B }
-/* #FontScroll ul li:first-child .fontInner span b{ background: #036564 }
-#FontScroll ul li:last-child .fontInner span b{ background: #3299BB } */
+#FontScroll ul li:first-child .fontInner span b{ background: #036564 }
+#FontScroll ul li:last-child .fontInner span b{ background: #3299BB }
