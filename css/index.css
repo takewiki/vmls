@@ -4,7 +4,14 @@
     box-sizing: border-box}
     
     
-*,body{padding:0px;	margin:0px;color: #222;font-family: "微软雅黑";}
+*,body{
+    padding:0px;	
+    margin:0px;
+    color: #222;
+    font-family: "微软雅黑";
+    
+}
+
 html,body{
     background: url("../images/bg02.png") no-repeat;
     background-size: cover;
