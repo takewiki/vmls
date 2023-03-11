@@ -257,32 +257,33 @@ ol{
 .center-right{
     width: 30%;
     padding: .1rem;
+    margin-bottom: .4rem;
 }
 
 .right-top{
     width: 100%;
-    height: 3.2rem;
-    /* margin-bottom: .4rem; */
+    height: 3.1rem;
+    margin-bottom: .1rem;
     border: 0.01rem solid #217093;
 }
 .right-cen{
     width: 100%;
-    height: 3.2rem;
-    /* margin-bottom: .4rem; */
+    height: 3.0rem;
+    margin-bottom: .4rem;
     border: 0.01rem solid #217093;
 }
 .right-bottom{
     width: 100%;
-    height: 4.0rem;
+    height: 3.8rem;
     border: 0.01rem solid #217093;
 }
 
 
-.gun1{
+.heading{
     width: 100%;
     margin-top: .2rem;
 }
-.gun1 span{
+.heading span{
     display: block;
     float: left;
     height: .2rem;
@@ -295,11 +296,11 @@ ol{
     margin-bottom: .1rem;
     /* margin-left: .1rem; */
 }
-.gun2{
+.heading2{
     width: 100%;
     margin-top: .2rem;
 }
-.gun2 span{
+.heading2 span{
     display: block;
     float: left;
     height: .2rem;
@@ -312,15 +313,8 @@ ol{
     margin-bottom: .1rem;
     padding-left: 0rem;
 }
-#pick{
-    width: 120px;
-    height: 50px;
-    /* font-size: .3rem; */
-    position: absolute;
-    right:100px;
-    top: 30px;
 
-}
+
 #FontScroll{
     width: 100%;
     height: 2.3rem;
@@ -329,6 +323,7 @@ ol{
     margin-left:.1rem;
     overflow: hidden;
 }
+
 #FontScroll ul li{
     height: .32rem;
     width: 100%;
@@ -339,16 +334,13 @@ ol{
     font-size: 0.14rem;
     padding-left: .1rem;
 }
-#FontScroll ul li:nth-child(1){
-    /*background-color: #072951;*/
-    box-shadow: -10px 0px 15px #034c6a inset, /*左边阴影*/
-    10px 0px 15px #034c6a inset;
-}
+
 #FontScroll ul li:hover{
     box-shadow: -10px 0px 15px #034c6a inset, /*左边阴影*/
     10px 0px 15px #034c6a inset;
     cursor: pointer;
 }
+
 
 .fontInner span{
     display:inline-block;
@@ -378,13 +370,3 @@ ol{
     color: #ffffff;
     line-height: .2rem;
 }
-#FontScroll ul li:nth-child(8n-4) .fontInner span b{ background: #20a8fe }
-#FontScroll ul li:nth-child(8n-3) .fontInner span b{ background: #EB6841 }
-#FontScroll ul li:nth-child(8n-2) .fontInner span b{ background: #3FB8AF }
-#FontScroll ul li:nth-child(8n-1) .fontInner span b{ background: #FE4365 }
-#FontScroll ul li:nth-child(8n-5) .fontInner span b{ background: #FC9D9A }
-#FontScroll ul li:nth-child(8n-6) .fontInner span b{ background: #EDC951 }
-#FontScroll ul li:nth-child(8n-7) .fontInner span b{ background: #C8C8A9 }
-#FontScroll ul li:nth-child(8n) .fontInner span b{ background: #83AF9B }
-#FontScroll ul li:first-child .fontInner span b{ background: #036564 }
-#FontScroll ul li:last-child .fontInner span b{ background: #3299BB }
