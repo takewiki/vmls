@@ -55,18 +55,19 @@ ol{
 
 }
 
-.header .header-left{
+
+.header-left{
     width: 25%;
     height: 1.05rem;
     color: white;
-/*    border: 1px solid green;*/
     text-align: center;
     line-height: 1.05rem;
 }
-.input-container{
+
+.mdl_weekSelector{
     width: 15%;
-    height: .5rem;
-    color: rgb(231, 227, 227);
+    height: .4rem;
+    color: rgb(254,196,34);
     background-color: #4b86ad;
     font-size: .3rem;
     text-align: center;
@@ -77,21 +78,26 @@ ol{
     border: .01rem solid #217093;
 }
 
-.header .header-center{
+
+.header-center{
     width: 50%;
     height: 1.05rem;
-    /*border: 1px solid red;*/
-/*    background: url("../images/head.gif") no-repeat;
-    background-size: 100% 100%;*/
     position: relative;
 }
-.header .header-center .header-title{
+
+
+/*数据大屏标题栏设置*/
+
+.header-title{
     text-align: center;
-    color: #ffffff;
+    color: rgb(254,196,34);
     font-size: .4rem;
     text-shadow: 0 0 .3rem #00d8ff;
     line-height: 1.05rem;
 }
+
+
+
 .header .header-img{
     background: url("../images/head.gif") no-repeat center center;
     background-size: 100%;
