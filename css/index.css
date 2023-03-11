@@ -2,6 +2,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box}
+    
+    
 *,body{padding:0px;	margin:0px;color: #222;font-family: "微软雅黑";}
 html,body{
     background: url("../images/bg02.png") no-repeat;
@@ -165,10 +167,7 @@ ul,ol{
     width: 100%;
     height: 2rem;
     margin-bottom: .1rem;
-    /*background: url("../images/panel.png") no-repeat;
-    background-size: 100% 100%;*/
-    /*transform-style: preserve-3d;*/
-    border: 0.01rem solid #217093;
+    border: 0.02rem solid #217093;
     position: relative;
     overflow: hidden;
 }
